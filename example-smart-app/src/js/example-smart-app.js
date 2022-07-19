@@ -76,7 +76,8 @@
           //}
           
           p.temp = getQuantityValueAndUnit(temp[0]);
-          p.alg = getQuantityValueAndUnit(alg[0]);
+		
+          p.alg = alg.entry.resource.code.text;
           
           ret.resolve(p);
         });
