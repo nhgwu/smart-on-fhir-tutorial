@@ -81,7 +81,7 @@
 		/*p.alg = alg.forEach(function(obj){
 			  alg.push(obj.code.text);
 		  });*/
-		p.alg = alg.push(alg[0]);
+		p.alg = alg.push("<tr><td>" + alg[0].code.text + "</tr></td>");
           
           ret.resolve(p);
         });
