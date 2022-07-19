@@ -79,7 +79,7 @@
 		
           //p.alg = alg[0].code.text;
 		  p.alg = forEach(function(ogj){
-			  alert(obj.code.text;)
+			  alert(obj.code.text);
 		  });
           
           ret.resolve(p);
