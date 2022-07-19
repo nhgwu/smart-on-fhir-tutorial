@@ -77,7 +77,10 @@
           
           p.temp = getQuantityValueAndUnit(temp[0]);
 		
-          p.alg = alg[0].code.text;
+          //p.alg = alg[0].code.text;
+		  p.alg = forEach(function(ogj){
+			  alert(obj.code.text;)
+		  }
           
           ret.resolve(p);
         });
