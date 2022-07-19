@@ -79,7 +79,7 @@
 		
           //p.alg = alg[0].code.text;
 		p.alg = alg.forEach(function(obj){
-			  documtne.write("<tr><td>"+obj.code.text+"</td></tr>";
+			  documtne.write("<tr><td>"+obj.code.text+"</td></tr>");
 		  });
           
           ret.resolve(p);
