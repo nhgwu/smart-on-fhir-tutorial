@@ -16,7 +16,8 @@
                     query: {
                       code: {
                         $or: ['http://loinc.org|8302-2', 'http://loinc.org|2085-9',
-                              'http://loinc.org|2089-1', 'http://loinc.org|85354-9','http://loinc.org|8310-5']
+                              'http://loinc.org|2089-1', 'http://loinc.org|85354-9',
+                              'http://loinc.org|8310-5', 'http://loinc.org|82606-5']
                       }
                     }
                   });
@@ -41,6 +42,7 @@
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
           var temp = byCodes('8310-5');
+          var alg = byCodes('82606-5');
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
@@ -65,6 +67,7 @@
           //}
           
           p.temp = getQuantityValueAndUnit(temp[0]);
+          p.alg = getQuantityValueAndUnit(alg[0]);
           
           ret.resolve(p);
         });
@@ -90,6 +93,7 @@
       ldl: {value: ''},
       hdl: {value: ''},
       temp: {value: ''},
+      alg: {value: ''},
     };
   }
 
@@ -134,6 +138,7 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#temp').html(p.temp);
+    $('#alg').html(p.alg);
   };
 
 })(window);
