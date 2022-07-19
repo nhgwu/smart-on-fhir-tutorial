@@ -79,7 +79,7 @@
 		
           //p.alg = alg[0].code.text;
 		p.alg = alg.forEach(function(obj){
-			  alert(obj.alg.code.text);
+			  alert(obj.alg);
 		  });
           
           ret.resolve(p);
