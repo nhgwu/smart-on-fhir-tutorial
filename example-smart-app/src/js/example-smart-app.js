@@ -77,7 +77,7 @@
           
           p.temp = getQuantityValueAndUnit(temp[0]);
 		
-          p.alg = alg[0].code.text;
+          p.alg = alg.code.text;
           
           ret.resolve(p);
         });
