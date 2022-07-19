@@ -60,6 +60,9 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
+          if (typeof temp != 'undefined') {
+            p.temp = temp;
+          }
           ret.resolve(p);
         });
       } else {
