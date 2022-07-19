@@ -51,7 +51,7 @@
           var hdl = byCodes('2085-9');
           var ldl = byCodes('2089-1');
           var temp = byCodes('8310-5');
-          var alg = byCodes('82606-5');
+          //var alg = byCodes('82606-5');
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
@@ -77,7 +77,7 @@
           
           p.temp = getQuantityValueAndUnit(temp[0]);
 		
-          p.alg = alg.code.text;
+          p.alg = alg[0].code.text;
           
           ret.resolve(p);
         });
