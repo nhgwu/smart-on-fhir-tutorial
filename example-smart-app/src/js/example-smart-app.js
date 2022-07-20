@@ -79,7 +79,7 @@
 	  
 	  var fmtalg = [];
 	  alg.forEach(function(obj){
-			  fmtalg.push("<h1>" + obj.code.text + "</h1>");
+			  fmtalg.push("<tr><td>" + obj.code.text + "</td></tr>");
 		  });
 	  p.alg = fmtalg;
 		//p.alg = alg[0].code.text;
