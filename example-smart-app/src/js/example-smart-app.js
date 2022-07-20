@@ -77,12 +77,12 @@
           
           p.temp = getQuantityValueAndUnit(temp[0]);
 	  
-	  var fmtalg = [];
+	  //var fmtalg = [];
 	  alg.forEach(function(obj){
 		  if (typeof alg != 'undefined') {
-			  fmtalg.push("<tr><td>" + obj.code.text + "</td></tr>");
+			  alg.push("<tr><td>" + obj.code.text + "</td></tr>");
 		  }});
-	  p.alg = fmtalg;
+	  p.alg = alg;
 		
           ret.resolve(p);
         });
