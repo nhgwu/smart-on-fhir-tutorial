@@ -78,13 +78,14 @@
           p.temp = getQuantityValueAndUnit(temp[0]);
 	  
 	  //var fmtalg = [];
+	  //alg.forEach(element => console.log(element.code.text));
 	  /*alg.forEach(function(obj){
 		  if (typeof alg != 'undefined') {
 			  alg.push("<tr><td>" + obj.code.text + "</td></tr>");
 		  }});
 	  p.alg = alg;*/
 
-          alg.forEach(element => console.log(element.code.text));
+          alg.forEach(element => element.code.text));
 		p.alg = alg;
           ret.resolve(p);
         });
