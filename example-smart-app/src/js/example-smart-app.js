@@ -33,7 +33,7 @@
         $.when(pt, obv, alg).done(function(patient, obv, alg) {
           var byCodes = smart.byCodes(obv, 'code');
 		  
-		  console.log(alg);
+		//console.log(alg);
 		  
           //var gender = patient.gender;
 
@@ -78,12 +78,14 @@
           p.temp = getQuantityValueAndUnit(temp[0]);
 	  
 	  //var fmtalg = [];
-	  alg.forEach(function(obj){
+	  /*alg.forEach(function(obj){
 		  if (typeof alg != 'undefined') {
 			  alg.push("<tr><td>" + obj.code.text + "</td></tr>");
 		  }});
-	  p.alg = alg;
-		
+	  p.alg = alg;*/
+
+          alg.forEach(element => console.log(element.code.text));
+
           ret.resolve(p);
         });
       } else {
