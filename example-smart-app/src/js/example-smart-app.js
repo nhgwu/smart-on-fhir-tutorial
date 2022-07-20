@@ -78,10 +78,10 @@
           p.temp = getQuantityValueAndUnit(temp[0]);
 	  
 	  var fmtalg = [];
-	  fmtalg.forEach(function(obj){
-			  alg.push("<h1>" + obj.code.text + "</h1>");
+	  alg.forEach(function(obj){
+			  fmtalg.push("<h1>" + obj.code.text + "</h1>");
 		  });
-	  p.alg = alg;
+	  p.alg = fmtalg;
 		//p.alg = alg[0].code.text;
 		/*p.alg = alg.forEach(function(obj){
 			  alg.push(obj.code.text);
