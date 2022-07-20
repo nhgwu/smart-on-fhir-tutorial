@@ -85,7 +85,7 @@
 	  p.alg = alg;*/
 
           alg.forEach(element => console.log(element.code.text));
-
+		p.alg = alg;
           ret.resolve(p);
         });
       } else {
