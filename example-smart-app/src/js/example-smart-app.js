@@ -76,10 +76,12 @@
           //}
           
           p.temp = getQuantityValueAndUnit(temp[0]);
-		
-          p.alg = alg.forEach(function(obj){
-			  alert(obj.code.text);
+	  
+	  var fmtalg = [];
+	  fmtalg.forEach(function(obj){
+			  alg.push("<h1>" + alg[0].code.text + "</h1>");
 		  });
+	  p.alg = alg;
 		//p.alg = alg[0].code.text;
 		/*p.alg = alg.forEach(function(obj){
 			  alg.push(obj.code.text);
