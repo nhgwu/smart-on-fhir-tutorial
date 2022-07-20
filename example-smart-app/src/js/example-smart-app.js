@@ -85,7 +85,7 @@
 		  }});
 	  p.alg = alg;*/
 
-          p.alg = alg.forEach(element.code.text);
+          p.alg = alg.forEach(element => alg.code.text);
 		
           ret.resolve(p);
         });
